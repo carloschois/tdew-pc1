@@ -17,13 +17,13 @@ ActiveRecord::Schema.define(:version => 20111111024830) do
     t.string   "titulo"
     t.string   "link"
     t.string   "descripcion"
-    t.integer  "tag_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "tags", :force => true do |t|
     t.string   "nombre"
+    t.integer  "bookmark_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
