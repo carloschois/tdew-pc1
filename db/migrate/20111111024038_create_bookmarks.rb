@@ -4,7 +4,7 @@ class CreateBookmarks < ActiveRecord::Migration
       t.string :titulo
       t.string :link
       t.string :descripcion
-
+      t.references :tag
       t.timestamps
     end
   end
